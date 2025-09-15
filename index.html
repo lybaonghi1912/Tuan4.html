@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FlowerBox 360</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #333;
+        }
+        /* Header */
+        
+        #header {
+            background: #1e4c82;
+            color: white;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        #header h1 {
+            margin: 0;
+            font-size: 26px;
+            display: inline-block;
+        }
+        
+        #header p {
+            font-size: 13px;
+        }
+        
+        .search {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .search input {
+            padding: 5px;
+        }
+        /* Navbar */
+        
+        #nav {
+            background: #123456;
+        }
+        
+        #nav ul {
+            list-style: none;
+            display: flex;
+        }
+        
+        #nav li {
+            border-right: 1px solid #fff;
+        }
+        
+        #nav li:last-child {
+            border-right: none;
+        }
+        
+        #nav a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        
+        #nav a:hover {
+            background: #0a274f;
+        }
+        /* Main container */
+        
+        #container {
+            display: flex;
+            padding: 20px;
+        }
+        
+        .left,
+        .middle,
+        .right {
+            padding: 0 15px;
+        }
+        
+        .left {
+            flex: 1.5;
+            border-right: 1px solid #ddd;
+        }
+        
+        .middle {
+            flex: 1;
+            border-right: 1px solid #ddd;
+        }
+        
+        .right {
+            flex: 1;
+        }
+        /* Left form */
+        
+        .left h2 {
+            margin-bottom: 10px;
+        }
+        
+        .note {
+            color: red;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .left form label {
+            display: inline-block;
+            margin-top: 8px;
+        }
+        
+        .left form input,
+        .left form textarea {
+            width: 95%;
+            margin: 5px 0;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        
+        .left button {
+            margin-top: 10px;
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+        /* Right */
+        
+        .right img {
+            max-width: 100%;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            padding: 3px;
+        }
+        
+        .right a {
+            color: #1e4c82;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* Footer */
+        
+        #footer {
+            background: #1e4c82;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div>
+            <h1>FlowerBox 360</h1>
+            <p>...to get your daily dose of luxury roses!</p>
+        </div>
+        <div class="search">
+            <input type="text" placeholder="Search the site...">
+            <button>GO</button>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <div id="nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Promotion</a></li>
+            <li><a href="#">Gift Baskets</a></li>
+            <li><a href="#">Flower Services</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div id="container">
+        <!-- Left -->
+        <div class="left">
+            <h2>Why Not Contact Us Today!</h2>
+            <p class="note">For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found online, but that you can do so at a great value.</p>
+
+            <form>
+                <label>Name:</label><br>
+                <input type="text" name="name"><br>
+
+                <label>Email:</label><br>
+                <input type="email" name="email"><br>
+
+                <label>Telephone:</label><br>
+                <input type="text" name="telephone"><br>
+
+                <label>Subject:</label><br>
+                <input type="text" name="subject"><br>
+
+                <label>Message:</label><br>
+                <textarea name="message" rows="4"></textarea><br>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+
+        <!-- Middle -->
+        <div class="middle">
+            <h2>FlowerBox 360 Info!</h2>
+            <p><b>Operating Hours:</b><br> Monday-Friday: 9.00am-5.00pm.<br> Saturday: 9.00am-1.00pm.<br> Sunday: Closed (No Deliveries)<br> ORDER ONLINE 24/7</p>
+            <p><b>Software Engineering Dept.</b><br> Information Technology Faculty<br> First Floor, H Building</p>
+            <p>
+                12 Nguyen Van Bao St., Ward 4<br> Go Vap District<br> Ho Chi Minh City<br> Tel: 0283 8940 390<br> Fax: 0283 9940 954
+            </p>
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+            <h2>Discounts & Specials</h2>
+            <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/helianthus-yellow-flower-pixabay_11863.jpg" alt="rose">
+            <p>FlowerBox 360 offers many great discounts throughout the year, from coupons and coupon codes, to promo codes and other savings. We also offer military flower discounts to our wonderful troops!</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <p>Copyright © 2017 – All Rights Reserved – Software Engineering Department – Industrial University of Ho Chi Minh City</p>
+    </div>
+</body>
+
+</html>
